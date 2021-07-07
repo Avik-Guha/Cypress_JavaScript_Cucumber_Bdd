@@ -1,0 +1,41 @@
+{
+	"name": "cypressjavascriptcucumberbdd",
+	"version": "1.0.0",
+	"description": "Cypress JavaScript CucumberBDD Framework",
+	"main": "index.js",
+	"scripts": {
+		"cypress_runner": "cypress open",
+		"cypress_runner_qa": "cypress open --env configFile=qa",
+		"cypress_runner_dev": "cypress open --env configFile=dev",
+		"delete_reports": "rimraf cypress/results/reports",
+		"prereport": "npm run delete_reports",
+		"junit_merge": "npx junit-merge -d cypress/results/reports/junit -o cypress/results/reports/junit/report.xml",
+		"mochawesome_merge": "npx mochawesome-merge \"cypress/results/reports/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+		"cypress_runtest_browser_headless": "cypress run --headless --browser chrome",
+		"cypress_runtest_browser_headed": "cypress run --browser chrome"
+	},
+	"author": "Avik Guha",
+	"license": "ISC",
+	"devDependencies": {
+		"@4tw/cypress-drag-drop": "^1.6.0",
+		"cypress": "^7.5.0",
+		"cypress-axe": "^0.12.2",
+		"cypress-cucumber-preprocessor": "^4.1.2",
+		"cypress-failed-log": "^2.9.1",
+		"cypress-file-upload": "^5.0.7",
+		"cypress-image-snapshot": "^4.0.1",
+		"cypress-multi-reporters": "^1.5.0",
+		"cypress-plugin-tab": "^1.0.5",
+		"junit-merge": "^2.0.0",
+		"mocha": "^9.0.0",
+		"mocha-junit-reporter": "^2.0.0",
+		"mochawesome": "^6.2.2",
+		"mochawesome-merge": "^4.2.0",
+		"mochawesome-report-generator": "^5.2.0",
+		"prettier": "^2.3.1",
+		"rimraf": "^3.0.2"
+	},
+	"cypress-cucumber-preprocessor": {
+		"nonGlobalStepDefinitions": true
+	}
+}

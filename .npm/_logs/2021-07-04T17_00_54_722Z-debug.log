@@ -1,0 +1,43 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\tools\\jenkins.plugins.nodejs.tools.NodeJSInstallation\\nodejs\\node.exe',
+1 verbose cli   'C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\tools\\jenkins.plugins.nodejs.tools.NodeJSInstallation\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'cypress_runtest_browser_headless'
+1 verbose cli ]
+2 info using npm@6.14.9
+3 info using node@v14.15.3
+4 verbose run-script [
+4 verbose run-script   'precypress_runtest_browser_headless',
+4 verbose run-script   'cypress_runtest_browser_headless',
+4 verbose run-script   'postcypress_runtest_browser_headless'
+4 verbose run-script ]
+5 info lifecycle cypressjavascriptcucumberbdd@1.0.0~precypress_runtest_browser_headless: cypressjavascriptcucumberbdd@1.0.0
+6 info lifecycle cypressjavascriptcucumberbdd@1.0.0~cypress_runtest_browser_headless: cypressjavascriptcucumberbdd@1.0.0
+7 verbose lifecycle cypressjavascriptcucumberbdd@1.0.0~cypress_runtest_browser_headless: unsafe-perm in lifecycle true
+8 verbose lifecycle cypressjavascriptcucumberbdd@1.0.0~cypress_runtest_browser_headless: PATH: C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\jenkins.plugins.nodejs.tools.NodeJSInstallation\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Avik\Automation\Framework\GitHub\CypressJavaScriptCucumberBDD\node_modules\.bin;C:\Program Files\Java\jdk-11.0.9/bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\jenkins.plugins.nodejs.tools.NodeJSInstallation\nodejs;C:\Program Files\Java\jdk-11.0.9/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-11.0.9\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Users\finda\AppData\Local\Android\Sdk\tools\bin;C:\Users\finda\AppData\Local\Android\Sdk\tools;C:\Users\finda\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\finda\Python\Python39;C:\Users\finda\Python\Python39\Scripts;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps
+9 verbose lifecycle cypressjavascriptcucumberbdd@1.0.0~cypress_runtest_browser_headless: CWD: C:\Avik\Automation\Framework\GitHub\CypressJavaScriptCucumberBDD
+10 silly lifecycle cypressjavascriptcucumberbdd@1.0.0~cypress_runtest_browser_headless: Args: [ '/d /s /c', 'cypress run --headless --browser chrome' ]
+11 silly lifecycle cypressjavascriptcucumberbdd@1.0.0~cypress_runtest_browser_headless: Returned: code: 1  signal: null
+12 info lifecycle cypressjavascriptcucumberbdd@1.0.0~cypress_runtest_browser_headless: Failed to exec cypress_runtest_browser_headless script
+13 verbose stack Error: cypressjavascriptcucumberbdd@1.0.0 cypress_runtest_browser_headless: `cypress run --headless --browser chrome`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\jenkins.plugins.nodejs.tools.NodeJSInstallation\nodejs\node_modules\npm\node_modules\npm-lifecycle\index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:315:20)
+13 verbose stack     at ChildProcess.<anonymous> (C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\jenkins.plugins.nodejs.tools.NodeJSInstallation\nodejs\node_modules\npm\node_modules\npm-lifecycle\lib\spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:315:20)
+13 verbose stack     at maybeClose (internal/child_process.js:1048:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)
+14 verbose pkgid cypressjavascriptcucumberbdd@1.0.0
+15 verbose cwd C:\Avik\Automation\Framework\GitHub\CypressJavaScriptCucumberBDD
+16 verbose Windows_NT 10.0.19042
+17 verbose argv "C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\tools\\jenkins.plugins.nodejs.tools.NodeJSInstallation\\nodejs\\node.exe" "C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\tools\\jenkins.plugins.nodejs.tools.NodeJSInstallation\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "cypress_runtest_browser_headless"
+18 verbose node v14.15.3
+19 verbose npm  v6.14.9
+20 error code ELIFECYCLE
+21 error errno 1
+22 error cypressjavascriptcucumberbdd@1.0.0 cypress_runtest_browser_headless: `cypress run --headless --browser chrome`
+22 error Exit status 1
+23 error Failed at the cypressjavascriptcucumberbdd@1.0.0 cypress_runtest_browser_headless script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
