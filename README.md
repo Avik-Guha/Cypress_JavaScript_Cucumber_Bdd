@@ -33,45 +33,47 @@ All set!!! Just download the Project folder...
 
      .vscode --> contains settings.js folder (contains parameters for cucumber and prettier)
 
-     Features --> contains cucumber feature files
+     Cypress:
 
-     Hooks --> contains hooks file
+          config --> contains configuration / environment files
 
-     Pages --> Contains Business Components and Object Locator files
+          fixtures --> contains fixture files (Json files)
 
-           *_BC.ts --> contains methods
+          integration:
 
-           *_OB.ts --> contains locators
+               common\steps --> contains Step Definition files
 
-     Reporting --> HTML report is generated using cucumber-html-reporter
+               features --> contains feature files
 
-     Resources --> contains configuration files and test data files
+               pages --> Contains Business Components and Object Locator files
 
-           config.ts --> this is the most important file in the framework. This is the configuration file that controls the test execution.
+                    *_BC.js --> contains methods
 
-           index.ts --> this file is used to set multiple environments
+                    *_OB.js --> contains locators
 
-     TestData --> this folder contains test data files (json, .ts files preferred)
+               Base --> contains methods to set viewport
 
-     StepDefinition --> contains step definition files
+               logs --> contains failed logs
 
-     Target --> after compilation .ts files are converted into .js files and get stored inside this folder
+               plugins --> contains index.js files for the plugins
 
-     Utility --> Contains custom utilities developed in the framework and are used globally across the framework
+               results --> stores execution result files
 
-           CommonFunctions --> contains custom methods to perform protractor checks/actions
+               support:
 
-           Identification --> contains identification type files (used by *_OB.ts files for storing/handling locators)
+                    commands --> used to store custom commands
 
-           Json_Reader --> utility built to read data from Json file
+                    index --> global configuration and behavior that modifies Cypress
 
-           Logger.ts --> Configuration file for Log4j2
+     mochawesome-report --> HTML report is generated using cucumber-html-reporter
 
      .prettierrc --> configuration file for Prettier
 
+     cypress.json --> configuration file for Cypress
+
      package.json --> contains scripts and dependency info
 
-     tsconfig.json --> configuration file for typescript
+     reporter-config.json --> configuration file for typescript
 
 ## Usage
 
