@@ -83,6 +83,8 @@ All set!!! Just download the Project folder...
 
           npm install
 
+          New folder "node_modules" will be created with all the dependencies after running this command.
+
      3. Run command to run the test:
 
           Command to delete existing reports:
