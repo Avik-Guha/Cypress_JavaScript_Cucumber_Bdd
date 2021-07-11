@@ -6,6 +6,7 @@ This is an Web Automation Testing framework using:
      JavaScript
      Cucumber BDD
      mochawesome report
+     Page Object Model
 
 ## Installation
 
