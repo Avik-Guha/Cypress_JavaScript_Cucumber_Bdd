@@ -1,7 +1,8 @@
 {
 	"env": {
-		"url": "https://opensource-demo.orangehrmlive.com/",
-		"username_Admin": "Admin",
-		"password_Admin": "admin123"
+		"viewport": "mobile",
+		"url": "http://demo.automationtesting.in/Register.html",
+		"username_Admin": "username_test",
+		"password_Admin": "password_test"
 	}
 }

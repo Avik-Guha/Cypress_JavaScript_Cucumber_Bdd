@@ -1,12 +1,10 @@
 /// <reference types="cypress" />
-import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
+import { Before } from 'cypress-cucumber-preprocessor/steps'
 import BasePage from '../../BasePage'
 
-Given('Launch Application', () => {
-	cy.launch_application()
-})
-
-Given('Set viewport to {string}', (viewport) => {
+Before(() => {
+	cy.log('This is executed first')
+	const viewport = Cypress.env('viewport')
 	switch (viewport) {
 		case 'mobile':
 			BasePage.setMobileViewPort()

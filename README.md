@@ -88,17 +88,23 @@ All set!!! Just download the Project folder...
 
      3. Run command to run the test:
 
-          Command to delete existing reports:
+          a. Command to delete existing reports:
 
-          npm run prereport
+               npm run prereport
 
-          Command to run script w.r.t.  the package.json file:
+          b. Command to run script w.r.t. the package.json file:
 
-          npm run cypress_runtest_browser_headless
+               npm run cypress_runtest_browser_headless
 
-          Command to merge and generate single HTML report:
+                              OR
 
-          npm run mochawesome_merge
+             Command to run script w.r.t. the Cucumber tags file:
+
+               npx cypress-tags run -e TAGS='@sanity' --browser chrome
+
+          c. Command to merge and generate single HTML report:
+
+               npm run mochawesome_merge
 
          E.g. npm run Test_QA
          (scripts must be added in Scripts section inside package.json file. For e.g., "cypress_runtest_browser_headless" and "mochawesome_merge" demo script has been added in this framework.)

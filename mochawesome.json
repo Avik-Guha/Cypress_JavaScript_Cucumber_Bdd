@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 2,
-    "passes": 2,
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-11T16:03:38.272Z",
-    "end": "2021-07-11T16:04:10.381Z",
-    "duration": 19407,
-    "testsRegistered": 2,
+    "start": "2021-07-13T08:47:49.084Z",
+    "end": "2021-07-13T08:48:29.064Z",
+    "duration": 34702,
+    "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,65 +18,7 @@
   },
   "results": [
     {
-      "uuid": "cda031f0-9809-4d61-aefd-808179b1ce72",
-      "title": "",
-      "fullFile": "cypress/integration/features/login2.feature",
-      "file": "cypress/integration/features/login2.feature",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "40cf2d00-dcb4-4695-aa1b-3ef3fc9f9df6",
-          "title": "Test login2 feature",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Test user login2 as Admin using correct credentials",
-              "fullTitle": "Test login2 feature Test user login2 as Admin using correct credentials",
-              "timedOut": null,
-              "duration": 9025,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "eb5bfc6d-6a82-48ff-9e2a-7391ba97813a",
-              "parentUUID": "40cf2d00-dcb4-4695-aa1b-3ef3fc9f9df6",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "eb5bfc6d-6a82-48ff-9e2a-7391ba97813a"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 9025,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "33824640-d7c9-4d57-a173-db7ad290a194",
+      "uuid": "ea5b604a-a4b8-46af-b4d1-3f77d9449090",
       "title": "",
       "fullFile": "cypress/integration/features/login.feature",
       "file": "cypress/integration/features/login.feature",
@@ -85,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2b638d59-7234-41a6-9ebd-aea40f17ff0d",
+          "uuid": "6f7cc516-f602-414e-8014-2695de101cd5",
           "title": "Test login feature",
           "fullFile": "",
           "file": "",
@@ -93,10 +35,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Test user login as Admin using correct credentials",
-              "fullTitle": "Test login feature Test user login as Admin using correct credentials",
+              "title": "Test user login as Admin using correct credentials in Desktop",
+              "fullTitle": "Test login feature Test user login as Admin using correct credentials in Desktop",
               "timedOut": null,
-              "duration": 10382,
+              "duration": 30826,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,20 +47,58 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "d3f9e9f9-bd3a-4c81-918f-63d2bd10d882",
-              "parentUUID": "2b638d59-7234-41a6-9ebd-aea40f17ff0d",
+              "uuid": "b34ad739-be68-4c4e-9e6f-b05ea34ab8cc",
+              "parentUUID": "6f7cc516-f602-414e-8014-2695de101cd5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test user login as Admin using correct credentials in Mobile",
+              "fullTitle": "Test login feature Test user login as Admin using correct credentials in Mobile",
+              "timedOut": null,
+              "duration": 2194,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "5c06a861-e1a1-4c86-b6ab-10dc28c1ff39",
+              "parentUUID": "6f7cc516-f602-414e-8014-2695de101cd5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test user login as Admin using correct credentials in Ipad",
+              "fullTitle": "Test login feature Test user login as Admin using correct credentials in Ipad",
+              "timedOut": null,
+              "duration": 1682,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "b148c175-83db-4064-a1b1-025818dd9972",
+              "parentUUID": "6f7cc516-f602-414e-8014-2695de101cd5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d3f9e9f9-bd3a-4c81-918f-63d2bd10d882"
+            "b34ad739-be68-4c4e-9e6f-b05ea34ab8cc",
+            "5c06a861-e1a1-4c86-b6ab-10dc28c1ff39",
+            "b148c175-83db-4064-a1b1-025818dd9972"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10382,
+          "duration": 34702,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

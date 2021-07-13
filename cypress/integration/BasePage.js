@@ -20,6 +20,10 @@ export default class BasePage {
 	}
 
 	static setLargeDesktopViewPort() {
-		cy.viewport(1980)
+		cy.viewport(1980, 1080)
+	}
+
+	static setDefaultViewPort() {
+		cy.viewport(1000, 660)
 	}
 }
